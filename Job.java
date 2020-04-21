@@ -11,7 +11,7 @@ public class Job {
    }
    
    public String toString() {
-      return "Job #" + n + " => Time in : " + t + "; CPU Burst: " + burst;
+      return "Job #" + n + " => Time in: " + t + "; CPU Burst: " + burst;
    }
    
 }
