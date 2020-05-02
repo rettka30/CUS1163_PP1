@@ -8,16 +8,18 @@ public class Job implements Comparable<Job> {
    public int turn;
    public int arrival;
    public int complete;
+   public boolean finish;
 
-   public Job(String name, int time, int CPUBurst, Job nxt) {
+   public Job(String name, int time, int CPUBurst) {
       n = name;
       t = time;
       burst = CPUBurst;
       remain = CPUBurst;
       wait = 0;
       turn = 0;
-      arrival = 0;
+      arrival = time;
       complete = 0;
+      finish = true;
    }
    
    public boolean equals(Job other) {
